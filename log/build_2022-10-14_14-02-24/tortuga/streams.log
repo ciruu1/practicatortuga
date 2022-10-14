@@ -1,0 +1,39 @@
+[0.515s] Invoking command in '/home/salman/Desktop/proyecto 1/practicatortuga/src/tortuga': PYTHONPATH=/home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tortuga build --build-base /home/salman/Desktop/proyecto 1/practicatortuga/build/tortuga/build install --prefix /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga --record /home/salman/Desktop/proyecto 1/practicatortuga/build/tortuga/install.log --single-version-externally-managed
+[0.714s] running egg_info
+[0.714s] creating ../../build/tortuga/tortuga.egg-info
+[0.714s] writing ../../build/tortuga/tortuga.egg-info/PKG-INFO
+[0.715s] writing dependency_links to ../../build/tortuga/tortuga.egg-info/dependency_links.txt
+[0.715s] writing entry points to ../../build/tortuga/tortuga.egg-info/entry_points.txt
+[0.716s] writing requirements to ../../build/tortuga/tortuga.egg-info/requires.txt
+[0.716s] writing top-level names to ../../build/tortuga/tortuga.egg-info/top_level.txt
+[0.716s] writing manifest file '../../build/tortuga/tortuga.egg-info/SOURCES.txt'
+[0.717s] reading manifest file '../../build/tortuga/tortuga.egg-info/SOURCES.txt'
+[0.718s] writing manifest file '../../build/tortuga/tortuga.egg-info/SOURCES.txt'
+[0.718s] running build
+[0.718s] running build_py
+[0.718s] creating /home/salman/Desktop/proyecto 1/practicatortuga/build/tortuga/build
+[0.718s] creating /home/salman/Desktop/proyecto 1/practicatortuga/build/tortuga/build/lib
+[0.738s] creating /home/salman/Desktop/proyecto 1/practicatortuga/build/tortuga/build/lib/tortuga
+[0.738s] copying tortuga/__init__.py -> /home/salman/Desktop/proyecto 1/practicatortuga/build/tortuga/build/lib/tortuga
+[0.739s] copying tortuga/turtlemove.py -> /home/salman/Desktop/proyecto 1/practicatortuga/build/tortuga/build/lib/tortuga
+[0.739s] running install
+[0.739s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.739s]   warnings.warn(
+[0.739s] running install_lib
+[0.740s] creating /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga
+[0.740s] copying /home/salman/Desktop/proyecto 1/practicatortuga/build/tortuga/build/lib/tortuga/__init__.py -> /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga
+[0.740s] copying /home/salman/Desktop/proyecto 1/practicatortuga/build/tortuga/build/lib/tortuga/turtlemove.py -> /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga
+[0.740s] byte-compiling /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga/__init__.py to __init__.cpython-310.pyc
+[0.741s] byte-compiling /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga/turtlemove.py to turtlemove.cpython-310.pyc
+[0.742s] running install_data
+[0.742s] creating /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/share/ament_index
+[0.742s] creating /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/share/ament_index/resource_index
+[0.743s] creating /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/share/ament_index/resource_index/packages
+[0.743s] copying resource/tortuga -> /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/share/ament_index/resource_index/packages
+[0.743s] copying package.xml -> /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/share/tortuga
+[0.743s] running install_egg_info
+[0.744s] Copying ../../build/tortuga/tortuga.egg-info to /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga-0.0.0-py3.10.egg-info
+[0.745s] running install_scripts
+[0.760s] Installing turtlemove script to /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/lib/tortuga
+[0.760s] writing list of installed files to '/home/salman/Desktop/proyecto 1/practicatortuga/build/tortuga/install.log'
+[0.775s] Invoked command in '/home/salman/Desktop/proyecto 1/practicatortuga/src/tortuga' returned '0': PYTHONPATH=/home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tortuga build --build-base /home/salman/Desktop/proyecto 1/practicatortuga/build/tortuga/build install --prefix /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga --record /home/salman/Desktop/proyecto 1/practicatortuga/build/tortuga/install.log --single-version-externally-managed

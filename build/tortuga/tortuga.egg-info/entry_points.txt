@@ -1,0 +1,3 @@
+[console_scripts]
+turtlemove = tortuga.turtlemove:main
+

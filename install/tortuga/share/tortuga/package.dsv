@@ -1,0 +1,6 @@
+source;share/tortuga/hook/pythonpath.ps1
+source;share/tortuga/hook/pythonpath.dsv
+source;share/tortuga/hook/pythonpath.sh
+source;share/tortuga/hook/ament_prefix_path.ps1
+source;share/tortuga/hook/ament_prefix_path.dsv
+source;share/tortuga/hook/ament_prefix_path.sh

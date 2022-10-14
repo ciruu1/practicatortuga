@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/tortuga/tortuga.egg-info
+writing ../../build/tortuga/tortuga.egg-info/PKG-INFO
+writing dependency_links to ../../build/tortuga/tortuga.egg-info/dependency_links.txt
+writing entry points to ../../build/tortuga/tortuga.egg-info/entry_points.txt
+writing requirements to ../../build/tortuga/tortuga.egg-info/requires.txt
+writing top-level names to ../../build/tortuga/tortuga.egg-info/top_level.txt
+writing manifest file '../../build/tortuga/tortuga.egg-info/SOURCES.txt'
+reading manifest file '../../build/tortuga/tortuga.egg-info/SOURCES.txt'
+writing manifest file '../../build/tortuga/tortuga.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/salman/Desktop/proyecto 1/practicatortuga/build/tortuga/build
+creating /home/salman/Desktop/proyecto 1/practicatortuga/build/tortuga/build/lib
+creating /home/salman/Desktop/proyecto 1/practicatortuga/build/tortuga/build/lib/tortuga
+copying tortuga/__init__.py -> /home/salman/Desktop/proyecto 1/practicatortuga/build/tortuga/build/lib/tortuga
+copying tortuga/turtlemove.py -> /home/salman/Desktop/proyecto 1/practicatortuga/build/tortuga/build/lib/tortuga
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga
+copying /home/salman/Desktop/proyecto 1/practicatortuga/build/tortuga/build/lib/tortuga/__init__.py -> /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga
+copying /home/salman/Desktop/proyecto 1/practicatortuga/build/tortuga/build/lib/tortuga/turtlemove.py -> /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga
+byte-compiling /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga/turtlemove.py to turtlemove.cpython-310.pyc
+running install_data
+creating /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/share/ament_index
+creating /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/share/ament_index/resource_index
+creating /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/share/ament_index/resource_index/packages
+copying resource/tortuga -> /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/share/ament_index/resource_index/packages
+copying package.xml -> /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/share/tortuga
+running install_egg_info
+Copying ../../build/tortuga/tortuga.egg-info to /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga-0.0.0-py3.10.egg-info
+running install_scripts
+Installing turtlemove script to /home/salman/Desktop/proyecto 1/practicatortuga/install/tortuga/lib/tortuga
+writing list of installed files to '/home/salman/Desktop/proyecto 1/practicatortuga/build/tortuga/install.log'
