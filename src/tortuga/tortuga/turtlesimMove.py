@@ -77,10 +77,18 @@ def vels(speed, turn):
     return "currently:\tspeed %s\tturn %s" %(speed,turn)
 
 def createRequestEmpty(node):
-    client = node.create_client(turtlesim.srv, 'empty')
+    client = node.create_client(_set_pen, 'set_pen')
     while not client.wait_for_service(1.0):
         node.get_logger().warn('Waiting for server')
-    future = client.call_async(std_srvs.srv.Empty.Request)
+
+    request = turtlesim.srv.SetPen.Request()
+    request.r = 255
+    request.g = 0
+    request.b = 0
+    request.off = 0
+    future = client.call_async(request)
+    
+    
 
 def main (args=None):
     if args is None:
@@ -126,11 +134,11 @@ def main (args=None):
                 reset=controlBindings['r']
                 color=color*controlBindings[' ']
                 if clear :
-                    createRequestEmpty(node)
+                    std_srvs.srv.Empty.Request
                 elif color==1:
-                    turtlesim.srv.SetPen.Request.r=255;turtlesim.srv.SetPen.Request.b=0;turtlesim.srv.SetPen.Request.g=0
+                    createRequestEmpty(node)
                 elif color==-1:
-                    turtlesim.srv.SetPen.Request.r=0;turtlesim.srv.SetPen.Request.b=0;turtlesim.srv.SetPen.Request.g=0
+                    createRequestEmpty(node)
                 elif reset:
                    std_srvs.srv.Empty.Request
             else :
@@ -151,8 +159,9 @@ def main (args=None):
             twist.angular.z=th*turn
             publi.publish(twist)
 
-    except:
+    except Exception as e:
         print("Fallo")
+        print(e)
     
     finally:
         twist=Twist()
