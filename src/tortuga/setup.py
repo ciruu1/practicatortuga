@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'turtlemove = tortuga.turtlemove:main'
+            'teleop_turtle_movement = tortuga.turtlesimMove:main'
         ],
     },
 )
