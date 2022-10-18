@@ -11,9 +11,9 @@ from rclpy.node import Node
 from pynput.keyboard import Key
 
 import turtlesim.srv
-from turtlesim.srv import _set_pen
+from turtlesim.srv import SetPen
 import std_srvs.srv
-from std_srvs.srv import _empty
+from std_srvs.srv import Empty
 
 
 settings= termios.tcgetattr(sys.stdin)
@@ -77,11 +77,11 @@ def vels(speed, turn):
     return "currently:\tspeed %s\tturn %s" %(speed,turn)
 
 def createRequestEmpty(node):
-    client = node.create_client(_set_pen, 'set_pen')
+    client = node.create_client(SetPen, '/turtle1/set_pen')
     while not client.wait_for_service(1.0):
         node.get_logger().warn('Waiting for server')
 
-    request = turtlesim.srv.SetPen.Request()
+    request = SetPen.Request()
     request.r = 255
     request.g = 0
     request.b = 0
