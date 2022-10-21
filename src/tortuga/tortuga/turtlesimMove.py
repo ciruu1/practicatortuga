@@ -17,6 +17,9 @@ from turtlesim.srv import SetPen
 import std_srvs.srv
 from std_srvs.srv import Empty
 
+import turtlesim.srv
+from turtlesim.srv import TeleportAbsolute
+
 
 settings= termios.tcgetattr(sys.stdin)
 
@@ -99,6 +102,17 @@ def createRequestClear(node):
 
     request = Empty.Request()
     future = client.call_async(request)
+
+def createRequestReset(node):
+    client = node.create_client(TeleportAbsolute, '/turtle1/teleport_absolute')
+    while not client.wait_for_service(1.0):
+        node.get_logger().warn('Waiting for server')
+
+    request = TeleportAbsolute.Request()
+    request.x = 5.0
+    request.y = 5.0
+    request.theta = 1.55
+    future = client.call_async(request)
     
     
 
@@ -152,7 +166,7 @@ def main (args=None):
                     off = not off
                     createRequestSetPen(node, off)
                 elif key == 'r':
-                    std_srvs.srv.Empty.Request
+                    createRequestReset(node)
                 continue
             else :
                 x = 0
