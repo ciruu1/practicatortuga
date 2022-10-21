@@ -76,7 +76,7 @@ def getKey():
 def vels(speed, turn):
     return "currently:\tspeed %s\tturn %s" %(speed,turn)
 
-def createRequestEmpty(node):
+def createRequestSetPen(node, off):
     client = node.create_client(SetPen, '/turtle1/set_pen')
     while not client.wait_for_service(1.0):
         node.get_logger().warn('Waiting for server')
@@ -85,7 +85,15 @@ def createRequestEmpty(node):
     request.r = 255
     request.g = 0
     request.b = 0
-    request.off = 0
+    request.off = 1 if off else 0
+    future = client.call_async(request)
+
+def createRequestClear(node):
+    client = node.create_client(Empty, '/clear')
+    while not client.wait_for_service(1.0):
+        node.get_logger().warn('Waiting for server')
+
+    request = Empty.Request()
     future = client.call_async(request)
     
     
@@ -134,11 +142,11 @@ def main (args=None):
                 reset=controlBindings['r']
                 color=color*controlBindings[' ']
                 if clear :
-                    std_srvs.srv.Empty.Request
+                    createRequestClear(node)
                 elif color==1:
-                    createRequestEmpty(node)
+                    createRequestSetPen(node, False)
                 elif color==-1:
-                    createRequestEmpty(node)
+                    createRequestSetPen(node, True)
                 elif reset:
                    std_srvs.srv.Empty.Request
             else :
