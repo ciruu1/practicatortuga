@@ -1,0 +1,26 @@
+[0.433s] Invoking command in '/home/salman/Desktop/turtle/practicatortuga/src/tortuga': PYTHONPATH=/home/salman/Desktop/turtle/practicatortuga/install/tortuga/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tortuga build --build-base /home/salman/Desktop/turtle/practicatortuga/build/tortuga/build install --prefix /home/salman/Desktop/turtle/practicatortuga/install/tortuga --record /home/salman/Desktop/turtle/practicatortuga/build/tortuga/install.log --single-version-externally-managed
+[0.609s] running egg_info
+[0.610s] writing ../../build/tortuga/tortuga.egg-info/PKG-INFO
+[0.610s] writing dependency_links to ../../build/tortuga/tortuga.egg-info/dependency_links.txt
+[0.610s] writing entry points to ../../build/tortuga/tortuga.egg-info/entry_points.txt
+[0.611s] writing requirements to ../../build/tortuga/tortuga.egg-info/requires.txt
+[0.611s] writing top-level names to ../../build/tortuga/tortuga.egg-info/top_level.txt
+[0.613s] reading manifest file '../../build/tortuga/tortuga.egg-info/SOURCES.txt'
+[0.614s] writing manifest file '../../build/tortuga/tortuga.egg-info/SOURCES.txt'
+[0.614s] running build
+[0.614s] running build_py
+[0.614s] copying tortuga/turtlesimMove.py -> /home/salman/Desktop/turtle/practicatortuga/build/tortuga/build/lib/tortuga
+[0.614s] running install
+[0.615s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.615s]   warnings.warn(
+[0.615s] running install_lib
+[0.615s] copying /home/salman/Desktop/turtle/practicatortuga/build/tortuga/build/lib/tortuga/turtlesimMove.py -> /home/salman/Desktop/turtle/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga
+[0.616s] byte-compiling /home/salman/Desktop/turtle/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga/turtlesimMove.py to turtlesimMove.cpython-310.pyc
+[0.617s] running install_data
+[0.617s] running install_egg_info
+[0.619s] removing '/home/salman/Desktop/turtle/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga-0.0.0-py3.10.egg-info' (and everything under it)
+[0.619s] Copying ../../build/tortuga/tortuga.egg-info to /home/salman/Desktop/turtle/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga-0.0.0-py3.10.egg-info
+[0.620s] running install_scripts
+[0.639s] Installing teleop_turtle_movement script to /home/salman/Desktop/turtle/practicatortuga/install/tortuga/lib/tortuga
+[0.640s] writing list of installed files to '/home/salman/Desktop/turtle/practicatortuga/build/tortuga/install.log'
+[0.660s] Invoked command in '/home/salman/Desktop/turtle/practicatortuga/src/tortuga' returned '0': PYTHONPATH=/home/salman/Desktop/turtle/practicatortuga/install/tortuga/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tortuga build --build-base /home/salman/Desktop/turtle/practicatortuga/build/tortuga/build install --prefix /home/salman/Desktop/turtle/practicatortuga/install/tortuga --record /home/salman/Desktop/turtle/practicatortuga/build/tortuga/install.log --single-version-externally-managed

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import sys
-from telnetlib import theNULL
 import termios
 import tty
 
@@ -43,7 +42,6 @@ Control:
 c= borra lo dibujado
 r= reinicia la posicion
 SPACE= habilita/deshabilita pintado
-Esc= salir
 
 """
 
@@ -105,32 +103,17 @@ def createRequestClear(node):
     request = Empty.Request()
     future = client.call_async(request)
 
-def createRequestStop(node):
-    
-    
-    client = node.create_client(Twist, '/turtle1/cmd_vel')
-    
-    twist=Twist()
-    twist.linear.x = 0.0; twist.linear.y = 0.0; twist.linear.z = 0.0
-    twist.angular.x = 0.0; twist.angular.y = 0.0; twist.angular.z = 0.0
-    client.publish(twist)
-    
-
 def createRequestReset(node):
     client = node.create_client(TeleportAbsolute, '/turtle1/teleport_absolute')
-    
     while not client.wait_for_service(1.0):
         node.get_logger().warn('Waiting for server')
-        
-    createRequestClear(node)
+
+    request = Empty.Request()
     request = TeleportAbsolute.Request()
     request.x = 5.0
     request.y = 5.0
     request.theta = 1.55
     future = client.call_async(request)
-    createRequestStop(node)
-    createRequestClear(node)
-    
     
     
 
@@ -191,7 +174,7 @@ def main (args=None):
                 y = 0
                 z = 0
                 th = 0
-                if (key == '\x1b'):
+                if (key == '\x03'):
                     break
             
             twist=Twist()

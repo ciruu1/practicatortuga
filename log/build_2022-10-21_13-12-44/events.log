@@ -1,0 +1,49 @@
+[0.000000] (-) TimerEvent: {}
+[0.000096] (tortuga) JobQueued: {'identifier': 'tortuga', 'dependencies': OrderedDict()}
+[0.000123] (tortuga) JobStarted: {'identifier': 'tortuga'}
+[0.099707] (-) TimerEvent: {}
+[0.200021] (-) TimerEvent: {}
+[0.300224] (-) TimerEvent: {}
+[0.400432] (-) TimerEvent: {}
+[0.500668] (-) TimerEvent: {}
+[0.600901] (-) TimerEvent: {}
+[0.701275] (-) TimerEvent: {}
+[0.801825] (-) TimerEvent: {}
+[0.902335] (-) TimerEvent: {}
+[1.002884] (-) TimerEvent: {}
+[1.103420] (-) TimerEvent: {}
+[1.188370] (tortuga) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/tortuga', 'build', '--build-base', '/home/salman/Desktop/turtle/practicatortuga/build/tortuga/build', 'install', '--prefix', '/home/salman/Desktop/turtle/practicatortuga/install/tortuga', '--record', '/home/salman/Desktop/turtle/practicatortuga/build/tortuga/install.log', '--single-version-externally-managed'], 'cwd': '/home/salman/Desktop/turtle/practicatortuga/src/tortuga', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US', 'USER': 'salman', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/salman', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'TERM_PROGRAM_VERSION': '1.72.2', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '1500', 'SYSTEMD_EXEC_PID': '1821', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2924', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'COLCON_PREFIX_PATH': '/home/salman/Desktop/turtle/practicatortuga/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'salman', 'JOURNAL_STREAM': '8:36893', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/salman-ROG-Strix-G531GW-G531GW:@/tmp/.ICE-unix/1796,unix/salman-ROG-Strix-G531GW-G531GW:/tmp/.ICE-unix/1796', 'GDM_LANG': 'en_US', 'INVOCATION_ID': '06b5e0c1d0b0404c8e7cf5f403771112', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/home/salman/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-2b0434a34d.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/salman', 'AMENT_PREFIX_PATH': '/home/salman/Desktop/turtle/practicatortuga/install/tortuga:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '--ms-enable-electron-run-as-node', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/salman/Desktop/turtle/practicatortuga/build/tortuga', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/salman/Desktop/turtle/practicatortuga/install/tortuga/lib/python3.10/site-packages:/home/salman/Desktop/turtle/practicatortuga/install/tortuga/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[1.203624] (-) TimerEvent: {}
+[1.303837] (-) TimerEvent: {}
+[1.404034] (-) TimerEvent: {}
+[1.457833] (tortuga) StdoutLine: {'line': b'running egg_info\n'}
+[1.458418] (tortuga) StdoutLine: {'line': b'writing ../../build/tortuga/tortuga.egg-info/PKG-INFO\n'}
+[1.458652] (tortuga) StdoutLine: {'line': b'writing dependency_links to ../../build/tortuga/tortuga.egg-info/dependency_links.txt\n'}
+[1.458951] (tortuga) StdoutLine: {'line': b'writing entry points to ../../build/tortuga/tortuga.egg-info/entry_points.txt\n'}
+[1.459143] (tortuga) StdoutLine: {'line': b'writing requirements to ../../build/tortuga/tortuga.egg-info/requires.txt\n'}
+[1.459222] (tortuga) StdoutLine: {'line': b'writing top-level names to ../../build/tortuga/tortuga.egg-info/top_level.txt\n'}
+[1.460438] (tortuga) StdoutLine: {'line': b"reading manifest file '../../build/tortuga/tortuga.egg-info/SOURCES.txt'\n"}
+[1.461081] (tortuga) StdoutLine: {'line': b"writing manifest file '../../build/tortuga/tortuga.egg-info/SOURCES.txt'\n"}
+[1.461290] (tortuga) StdoutLine: {'line': b'running build\n'}
+[1.461377] (tortuga) StdoutLine: {'line': b'running build_py\n'}
+[1.461451] (tortuga) StdoutLine: {'line': b'copying tortuga/turtlesimMove.py -> /home/salman/Desktop/turtle/practicatortuga/build/tortuga/build/lib/tortuga\n'}
+[1.461620] (tortuga) StdoutLine: {'line': b'running install\n'}
+[1.479608] (tortuga) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[1.479762] (tortuga) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.479919] (tortuga) StdoutLine: {'line': b'running install_lib\n'}
+[1.480586] (tortuga) StdoutLine: {'line': b'copying /home/salman/Desktop/turtle/practicatortuga/build/tortuga/build/lib/tortuga/turtlesimMove.py -> /home/salman/Desktop/turtle/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga\n'}
+[1.481010] (tortuga) StdoutLine: {'line': b'byte-compiling /home/salman/Desktop/turtle/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga/turtlesimMove.py to turtlesimMove.cpython-310.pyc\n'}
+[1.482048] (tortuga) StdoutLine: {'line': b'running install_data\n'}
+[1.482419] (tortuga) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.483552] (tortuga) StdoutLine: {'line': b"removing '/home/salman/Desktop/turtle/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.483751] (tortuga) StdoutLine: {'line': b'Copying ../../build/tortuga/tortuga.egg-info to /home/salman/Desktop/turtle/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga-0.0.0-py3.10.egg-info\n'}
+[1.484475] (tortuga) StdoutLine: {'line': b'running install_scripts\n'}
+[1.499539] (tortuga) StdoutLine: {'line': b'Installing teleop_turtle_movement script to /home/salman/Desktop/turtle/practicatortuga/install/tortuga/lib/tortuga\n'}
+[1.499744] (tortuga) StdoutLine: {'line': b"writing list of installed files to '/home/salman/Desktop/turtle/practicatortuga/build/tortuga/install.log'\n"}
+[1.504120] (-) TimerEvent: {}
+[1.533237] (tortuga) CommandEnded: {'returncode': 0}
+[1.604268] (-) TimerEvent: {}
+[1.704969] (-) TimerEvent: {}
+[1.805323] (-) TimerEvent: {}
+[1.845676] (tortuga) JobEnded: {'identifier': 'tortuga', 'rc': 0}
+[1.848378] (-) EventReactorShutdown: {}

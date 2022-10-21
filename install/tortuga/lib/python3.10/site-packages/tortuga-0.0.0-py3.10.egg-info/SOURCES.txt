@@ -13,4 +13,4 @@ test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
 tortuga/__init__.py
-tortuga/turtlemove.py
+tortuga/turtlesimMove.py

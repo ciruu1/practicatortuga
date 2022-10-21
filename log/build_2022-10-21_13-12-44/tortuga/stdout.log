@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/tortuga/tortuga.egg-info/PKG-INFO
+writing dependency_links to ../../build/tortuga/tortuga.egg-info/dependency_links.txt
+writing entry points to ../../build/tortuga/tortuga.egg-info/entry_points.txt
+writing requirements to ../../build/tortuga/tortuga.egg-info/requires.txt
+writing top-level names to ../../build/tortuga/tortuga.egg-info/top_level.txt
+reading manifest file '../../build/tortuga/tortuga.egg-info/SOURCES.txt'
+writing manifest file '../../build/tortuga/tortuga.egg-info/SOURCES.txt'
+running build
+running build_py
+copying tortuga/turtlesimMove.py -> /home/salman/Desktop/turtle/practicatortuga/build/tortuga/build/lib/tortuga
+running install
+running install_lib
+copying /home/salman/Desktop/turtle/practicatortuga/build/tortuga/build/lib/tortuga/turtlesimMove.py -> /home/salman/Desktop/turtle/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga
+byte-compiling /home/salman/Desktop/turtle/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga/turtlesimMove.py to turtlesimMove.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/salman/Desktop/turtle/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/tortuga/tortuga.egg-info to /home/salman/Desktop/turtle/practicatortuga/install/tortuga/lib/python3.10/site-packages/tortuga-0.0.0-py3.10.egg-info
+running install_scripts
+Installing teleop_turtle_movement script to /home/salman/Desktop/turtle/practicatortuga/install/tortuga/lib/tortuga
+writing list of installed files to '/home/salman/Desktop/turtle/practicatortuga/build/tortuga/install.log'
