@@ -3,6 +3,8 @@
 import sys
 import termios
 import tty
+
+from matplotlib.transforms import offset_copy
 import rclpy
 import select
 
@@ -81,6 +83,8 @@ def createRequestSetPen(node, off):
     while not client.wait_for_service(1.0):
         node.get_logger().warn('Waiting for server')
 
+    #off = not off
+
     request = SetPen.Request()
     request.r = 255
     request.g = 0
@@ -89,7 +93,7 @@ def createRequestSetPen(node, off):
     future = client.call_async(request)
 
 def createRequestClear(node):
-    client = node.create_client(Empty, '/clear')
+    client = node.create_client(std_srvs.srv.Empty, '/clear')
     while not client.wait_for_service(1.0):
         node.get_logger().warn('Waiting for server')
 
@@ -105,6 +109,7 @@ def main (args=None):
     node= rclpy.create_node('teleop_turtle_movement')
     publi= node.create_publisher(Twist, '/turtle1/cmd_vel', 10)
 
+    off = False
 
 
     
@@ -141,14 +146,13 @@ def main (args=None):
                 clear=controlBindings['c']
                 reset=controlBindings['r']
                 color=color*controlBindings[' ']
-                if clear :
+                if key == 'c' :
                     createRequestClear(node)
-                elif color==1:
-                    createRequestSetPen(node, False)
-                elif color==-1:
-                    createRequestSetPen(node, True)
-                elif reset:
-                   std_srvs.srv.Empty.Request
+                elif key == ' ':
+                    off = not off
+                    createRequestSetPen(node, off)
+                elif key == 'r':
+                    std_srvs.srv.Empty.Request
             else :
                 x = 0
                 y = 0
