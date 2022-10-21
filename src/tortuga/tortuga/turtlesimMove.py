@@ -153,6 +153,7 @@ def main (args=None):
                     createRequestSetPen(node, off)
                 elif key == 'r':
                     std_srvs.srv.Empty.Request
+                continue
             else :
                 x = 0
                 y = 0
