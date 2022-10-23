@@ -108,14 +108,14 @@ def createRequestClear(node):
 def createRequestStop(node):
     
     
-    client = node.create_client(Twist, '/turtle1/cmd_vel')
+    client = node.create_publisher(Twist, '/turtle1/cmd_vel',10)
     
     twist=Twist()
     twist.linear.x = 0.0; twist.linear.y = 0.0; twist.linear.z = 0.0
     twist.angular.x = 0.0; twist.angular.y = 0.0; twist.angular.z = 0.0
     client.publish(twist)
     
-
+     
 def createRequestReset(node):
     client = node.create_client(TeleportAbsolute, '/turtle1/teleport_absolute')
     
@@ -128,8 +128,8 @@ def createRequestReset(node):
     request.y = 5.0
     request.theta = 1.55
     future = client.call_async(request)
-    createRequestStop(node)
     createRequestClear(node)
+    createRequestStop(node)
     
     
     
